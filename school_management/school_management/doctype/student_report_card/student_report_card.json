@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:month_of_exam",
+ "creation": "2023-09-24 07:54:24.611660",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month_of_exam",
+  "section_break_nsqw",
+  "subject_1",
+  "subject_2",
+  "subject_3",
+  "subject_4",
+  "subject_5",
+  "column_break_hvve",
+  "mark_1",
+  "mark_2",
+  "mark_3",
+  "mark_4",
+  "mark_5"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nsqw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "subject.month_of_exam",
+   "fieldname": "month_of_exam",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Month of Exam",
+   "options": "Exam",
+   "unique": 1
+  },
+  {
+   "fetch_from": "date_of_exam.lang_1",
+   "fieldname": "subject_1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject 1",
+   "options": "Subject"
+  },
+  {
+   "fieldname": "subject_2",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject 2",
+   "options": "Subject"
+  },
+  {
+   "fieldname": "subject_3",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject 3",
+   "options": "Subject"
+  },
+  {
+   "fieldname": "subject_4",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject 4",
+   "options": "Subject"
+  },
+  {
+   "fieldname": "subject_5",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject 5",
+   "options": "Subject"
+  },
+  {
+   "fieldname": "column_break_hvve",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mark_1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mark 1"
+  },
+  {
+   "fieldname": "mark_2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mark 2"
+  },
+  {
+   "fieldname": "mark_3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mark 3"
+  },
+  {
+   "fieldname": "mark_4",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mark 4"
+  },
+  {
+   "fieldname": "mark_5",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mark 5"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-25 09:02:56.273714",
+ "modified_by": "Administrator",
+ "module": "School Management",
+ "name": "Student Report Card",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
